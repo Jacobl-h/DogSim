@@ -1,4 +1,3 @@
-# A simple, single-file dog daycare simulation for architecture portfolios.
 # This code demonstrates agent-based simulation with a live visualization feature
 # and an interactive mode to draw the simulation boundary.
 #
@@ -12,8 +11,7 @@ import math
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from shapely.geometry import Point, Polygon
-from shapely import affinity # For scaling, although not used here, it's a good import to keep
-# No longer importing geopandas to keep the build simple.
+from shapely import affinity 
 import seaborn as sns 
 import warnings
 import sys
@@ -270,4 +268,5 @@ if __name__ == "__main__":
             dogs = simulate_step(dogs, daycare_shape, sim_params)
         
         print("Batch Mode: Simulation finished. Generating final plot...")
+
         plot_final_results(dogs, daycare_shape)
